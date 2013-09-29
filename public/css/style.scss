@@ -1,0 +1,64 @@
+$color-light-grey: #ddddd8;
+$color-darker-grey: #616070;
+$color-dark-grey: #262625;
+
+$color-box:	$color-light-grey;
+
+$padding-base-vertical:          10px;
+$padding-base-horizontal:        15px;
+
+$padding-large-vertical:         18px;
+$padding-large-horizontal:       27px;
+
+$padding-small-vertical:         6px;
+$padding-small-horizontal:       9px;
+
+$margin-base-vertical:          $padding-base-vertical;
+
+$margin-small-horizontal:       6px;
+
+
+body {
+
+	padding: 50px 0;
+	
+}
+
+.box {
+	color: $color-dark-grey;
+	display: block;
+	position: relative;
+	min-height: 100px;
+	padding: $padding-base-vertical $padding-base-horizontal;
+	margin-bottom: $margin-base-vertical;
+	background-color: $color-box;
+	border-bottom: 5px solid $color-darker-grey;
+}
+
+// BEMS
+.box--hover {
+	&:hover {
+		color: $color-light-grey;
+		background-color: $color-darker-grey;
+		text-decoration: none;
+	}
+}
+.box--jumbo {
+	min-height: 250px;
+	background-color: $color-dark-grey;
+	color: #FFF;
+	h2 {
+		font-size: 4em;
+	}
+	
+}
+.box__content-bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+.container--narrowed {
+	max-width: 800px;
+	padding-right: $padding-small-horizontal;
+	padding-left: $padding-small-horizontal;
+}
