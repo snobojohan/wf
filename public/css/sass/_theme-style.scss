@@ -1,0 +1,55 @@
+@import "compass";
+@import "theme-variables";
+
+body {
+	padding: 60px 0;
+}
+
+// Classes
+.box {
+	color: $gray-dark;
+	display: block;
+	position: relative;
+	min-height: 100px;
+	padding: $padding-base-vertical $padding-base-horizontal;
+	margin-bottom: $line-height-computed;
+	background-color: $theme-color-box;
+	border-bottom: 5px solid $brand-primary;
+	////
+	// @include box-shadow();
+}
+
+// Standards
+
+blockquote p {
+	font-family: $font-family-serif;
+	font-style: italic;
+}
+
+// BEMS
+.box--hover {
+	&:hover {
+		color: $gray-darker;
+		background-color: darken($theme-color-box, 10%);
+		text-decoration: none;
+	}
+}
+.box--jumbo {
+	min-height: 250px;
+	background-color: $gray-darker;
+	color: #FFF;
+	h2 {
+		font-size: 4em;
+	}
+	
+}
+.box__content-bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+.container--narrowed {
+	max-width: 800px;
+	padding-right: $padding-small-horizontal;
+	padding-left: $padding-small-horizontal;
+}

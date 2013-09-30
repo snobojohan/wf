@@ -1,0 +1,33 @@
+body {
+  padding: 50px 0; }
+
+.box {
+  color: #262625;
+  display: block;
+  position: relative;
+  min-height: 100px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #ddddd8;
+  border-bottom: 5px solid #616070; }
+
+.box--hover:hover {
+  color: #ddddd8;
+  background-color: #616070;
+  text-decoration: none; }
+
+.box--jumbo {
+  min-height: 250px;
+  background-color: #262625;
+  color: #FFF; }
+  .box--jumbo h2 {
+    font-size: 4em; }
+
+.box__content-bottom {
+  position: absolute;
+  bottom: 0; }
+
+.container--narrowed {
+  max-width: 800px;
+  padding-right: 9px;
+  padding-left: 9px; }
